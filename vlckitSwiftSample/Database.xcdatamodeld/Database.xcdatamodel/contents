@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Xcode 7.0">
+    <entity name="FACEDETECT" syncable="YES">
+        <attribute name="fileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image0" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="image1" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="image2" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="video" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="FIREDETECT" syncable="YES">
+        <attribute name="fileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image0" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="image1" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="image2" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="video" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="GASDETECT" syncable="YES">
+        <attribute name="fileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image0" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="image1" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="image2" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="video" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="SMOKEDETECT" syncable="YES">
+        <attribute name="fileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image0" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="image1" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="image2" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="video" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="USERECCORD" syncable="YES">
+        <attribute name="fileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image0" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="image1" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="image2" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="video" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="FACEDETECT" positionX="-45" positionY="0" width="128" height="118"/>
+        <element name="FIREDETECT" positionX="-18" positionY="54" width="128" height="118"/>
+        <element name="GASDETECT" positionX="9" positionY="90" width="128" height="118"/>
+        <element name="SMOKEDETECT" positionX="27" positionY="117" width="128" height="118"/>
+        <element name="USERECCORD" positionX="45" positionY="135" width="128" height="118"/>
+    </elements>
+</model>

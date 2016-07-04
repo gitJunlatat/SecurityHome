@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Xcode 7.0">
+    <entity name="FireDtect" representedClassName=".FireDetect" syncable="YES">
+        <attribute name="dateDetect" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeDetect" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="imagestore" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="ImageStore" inverseName="firedetect" inverseEntity="ImageStore" syncable="YES"/>
+    </entity>
+    <entity name="GasDetect" representedClassName=".GasDetect" syncable="YES">
+        <attribute name="dateDetect" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeDetect" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="imagestore" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="ImageStore" inverseName="gasdetect" inverseEntity="ImageStore" syncable="YES"/>
+    </entity>
+    <entity name="HumanDetect" representedClassName=".HumanDetect" syncable="YES">
+        <attribute name="dateDetect" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeDetect" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="imagestore" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ImageStore" inverseName="humandetect" inverseEntity="ImageStore" syncable="YES"/>
+    </entity>
+    <entity name="ImageStore" representedClassName=".ImageStore" syncable="YES">
+        <attribute name="image0" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="image1" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="image2" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="timeDetect" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="firedetect" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FireDtect" inverseName="imagestore" inverseEntity="FireDtect" syncable="YES"/>
+        <relationship name="gasdetect" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GasDetect" inverseName="imagestore" inverseEntity="GasDetect" syncable="YES"/>
+        <relationship name="humandetect" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HumanDetect" inverseName="imagestore" inverseEntity="HumanDetect" syncable="YES"/>
+        <relationship name="smokedetect" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SmokeDetect" inverseName="imagestore" inverseEntity="SmokeDetect" syncable="YES"/>
+    </entity>
+    <entity name="SmokeDetect" representedClassName=".SmokeDetect" syncable="YES">
+        <attribute name="dateDetect" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeDetect" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="imagestore" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="ImageStore" inverseName="smokedetect" inverseEntity="ImageStore" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="FireDtect" positionX="-155" positionY="54" width="128" height="90"/>
+        <element name="GasDetect" positionX="-180" positionY="164" width="128" height="90"/>
+        <element name="HumanDetect" positionX="-209" positionY="290" width="128" height="88"/>
+        <element name="ImageStore" positionX="-576" positionY="-0" width="128" height="163"/>
+        <element name="SmokeDetect" positionX="-236" positionY="416" width="128" height="90"/>
+    </elements>
+</model>
